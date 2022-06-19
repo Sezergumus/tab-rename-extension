@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Rename Tabs Easily",
+    "version": "0.1.0",
+    "description": "This extension helps you to change site's title easily.",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["style.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Rename Tabs Easily"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+      "icons": {
+        "128": "text-icon.png"
+    }
+}
